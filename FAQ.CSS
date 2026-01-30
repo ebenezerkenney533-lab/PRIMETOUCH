@@ -1,0 +1,49 @@
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.faq-container h1 {
+  text-align: center;
+  color: #e63946; /* Our shop's red accent */
+  margin-bottom: 10px;
+}
+
+.faq-container p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* The Box around each question */
+details {
+  background: #f4f4f4;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid #e63946;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+details[open] {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* The Question Text */
+summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  list-style: none; /* Removes the default arrow */
+}
+
+/* The Answer Text */
+details p {
+  text-align: left; /* Keep answer text left-aligned */
+  margin-top: 15px;
+  color: #555;
+  line-height: 1.6;
+}
